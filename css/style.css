@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%; /** RESET PARA REMS - 62.5% = 10px de 16px **/
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(../img/wave.svg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(45, 44, 99);
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Raleway';
+    color: white;
+}
+
+
+.contenedor-principal{
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+img {
+    max-width: 100%; /*** HACE QUE LAS IMAGENES SEAN RESPONSIVE ***/
+}
+
+.yo {
+    align-items: center;
+    padding-top: 20rem;
+    
+}
+
+.yo h1 {
+
+    font-weight: 900;
+    font-size: 15rem;
+    margin-bottom: 0;
+
+}
+
+.yo h2 {
+    font-size: 5rem;
+    margin-top: 0;
+    font-weight: 900;
+    margin: 0 0 0 6.5px;
+}
+
+
+/*** GRID ICONOS ***/
+
+.contenedor-ico {
+    margin: 0 auto;
+    width: 90%;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+.section {
+    font-size: 5rem;
+    font-weight: 900;
+    align-items: center;
+    padding-top: 60rem;
+    text-align: center;
+}
+
+.iconos {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    column-gap: 30rem;
+    row-gap: 2rem;
+    justify-items: center;
+    padding: 0 0 0 7rem;
+}
+
+div.iconos {
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+div.iconos:hover {
+    transform:translateY(-10px);
+}
+
+
+.iconos img {
+    width: 20rem; height: 20rem;
+}
+
+.iconos p {
+    font-weight: 600;
+}
+
+
+/** CONTACTOS **/
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50rem;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) and (max-height:812){
+    .contenedor-ico {
+        grid-gap: 20rem;
+    }
+    .yo {
+        display: none;
+        padding-bottom: 50rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) and (max-height:640){
+    .contenedor-ico{
+        grid-gap: 20rem;
+    }
+    .yo {
+        display: none;
+        padding-bottom: 50rem;
+    }
+
+}
